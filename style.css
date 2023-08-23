@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: #fff;
+}
+*::selection {
+  background-color: red;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 6rem;
+  /* background-color: red; */
+  font-size: 1rem;
+  text-transform: capitalize;
+  padding: 0 5%;
+}
+#nav h1 {
+  font-size: 1rem;
+  font-weight: 400;
+  cursor: pointer;
+}
+#nav h1:hover {
+  color: red;
+}
+#nav h1 i {
+  margin-right: 5px;
+}
+#nav .nav_prt2 {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background-color: blue; */
+  font-weight: 400;
+}
+#nav .nav_prt2 h5 {
+  font-weight: 400;
+}
+#nav .nav_prt2 h5:hover {
+  color: red;
+}
+#nav img {
+  height: 2.5rem;
+}
+#nav .line {
+  width: 6rem;
+  height: 2px;
+  background-color: red;
+}
+.content {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 6rem);
+  position: relative;
+}
+.left {
+  height: 100%;
+  width: 38%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5%;
+}
+.center {
+  height: 100%;
+  width: 24%;
+  display: flex;
+  align-items: center;
+}
+.right {
+  height: 100%;
+  width: 38%;
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.left h1 {
+  font-size: 3.1rem;
+  line-height: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.left h1 span {
+  color: red;
+  font-weight: 300;
+}
+.left p {
+  font-size: 0.9rem;
+  width: 80%;
+  align-self: start;
+  margin-bottom: 2rem;
+  line-height: 1.5rem;
+}
+.bntDiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  align-self: start;
+}
+.bntDiv i {
+  color: red;
+  cursor: pointer;
+}
+.bntDiv button {
+  padding: 12px 30px;
+  border-radius: 20px;
+  background-color: rgb(255, 50, 50);
+  border: 0;
+  outline: 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all ease 0.4s;
+}
+.bntDiv button:hover {
+  background-color: rgb(230, 13, 13);
+}
+.bntDiv button i {
+  color: #fff;
+  margin-right: 10px;
+}
+.center .center-curve {
+  height: 88%;
+  width: 100%;
+  border-top-left-radius: 1000px;
+  border-top-right-radius: 1000px;
+  background: url(https://c0.wallpaperflare.com/preview/85/135/782/coca-cola-led-signage.jpg);
+  background-size: 550%;
+  background-position: 30% 40%;
+  filter: blur(2px);
+}
+#main_img {
+  height: 510px;
+  position: absolute;
+  left: 48%;
+  top: 48%;
+  transform: translate(-48%, -48%);
+}
+#main_img img {
+  height: 100%;
+}
+
+.accordian {
+  padding-top: 6rem;
+  width: 50%;
+}
+.accordian .elem {
+  margin: 15px 0;
+  overflow: hidden;
+  width: 100%;
+}
+.accordian .elem input {
+  display: none;
+}
+.accordian .elem label {
+  font-size: 1.2rem;
+  cursor: pointer;
+  display: block;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  opacity: 0.4;
+}
+.accordian .elem label i {
+  font-size: 1rem;
+}
+.accordian .elem .info {
+  max-height: 0;
+  font-size: 0.7rem;
+  line-height: 0.8rem;
+  transition: all ease 0.5s;
+  opacity: 0.4;
+}
+.accordian .elem input:checked ~ .info {
+  max-height: 100px;
+  margin-top: 5px;
+}
+.accordian .elem input:checked ~ label {
+  opacity: 1;
+}
+.accordian .elem input:checked ~ label i {
+  display: none;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.4;
+}
